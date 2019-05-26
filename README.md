@@ -10,7 +10,7 @@ The project was evaluated by a Udacity code reviewer according to the [Restauran
 
 ### How to see what's been done?
 
-Project URL:
+Project URL: https://yancongli.github.io/RestaurantReviewApp/index.html (Not fully supproted by github at this point)
 
 1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
 
