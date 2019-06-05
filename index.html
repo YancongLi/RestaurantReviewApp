@@ -20,18 +20,24 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container">
+    <section id="map-container" aria-labelledby="map-aria-description" role="application">
       <div id="map"></div>
     </section>
+
+    <label id="map-aria-description" class="map-aria-description">Mapbox map application</label>
+
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()"
+          aria-labelledby="neighborhoods-label">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <label id="neighborhoods-label" class="filter-label">by neighborhoods</label>
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby="cuisines-label">
           <option value="all">All Cuisines</option>
         </select>
+        <label id="cuisines-label" class="filter-label">by cuisines</label>
       </div>
       <ul id="restaurants-list"></ul>
     </section>
@@ -40,6 +46,7 @@
     integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
     crossorigin=""></script>
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/sw_regi.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
 

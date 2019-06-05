@@ -22,9 +22,13 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb">
-      <li><a href="/">Home</a></li>
-    </ul>
+    <nav role="navigation" aria-label="Breadcrumb">
+      <ul id="breadcrumb">
+        <li>
+          <a href="/">Home</a>
+        </li>
+      </ul>
+    </nav>
     <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
@@ -34,7 +38,7 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="location" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
@@ -65,6 +69,8 @@
   <!-- Beginning scripts -->
   <!-- Database helpers -->
   <script type="text/javascript" src="js/dbhelper.js"></script>
+  <!-- Service Worker -->
+  <script type="text/javascript" src="js/sw_regi.js"></script>
   <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
